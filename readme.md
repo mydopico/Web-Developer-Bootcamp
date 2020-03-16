@@ -1,4 +1,4 @@
-This repository contains the exercises and projects, including a gigantic production application called YelpCamp, for the course 'Web Developer Bootcamp' by Colt Steele at Udemy. 
+This repository contains the exercises and projects, including a gigantic production application called YelpCamp, for the course 'Web Developer Bootcamp' by Colt Steele on Udemy. 
 
 This course covers:
 * HTML5
