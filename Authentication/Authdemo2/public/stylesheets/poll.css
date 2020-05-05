@@ -1,0 +1,73 @@
+body, html {	
+ /* background:  url(https://image.freepik.com/free-vector/colorful-confetti-celebratory-design_53876-67673.jpg);     */
+ background:  url(https://image.freepik.com/free-vector/colorful-confetti-celebratory-design_53876-67672.jpg);   
+ 
+}
+
+/* NAVBAR */
+
+#mainNavbar {
+	opacity: 0.8;
+	padding: 0.50%;
+	margin-bottom: 0;
+	}
+
+#mainNavbar .navbar-brand {    		
+	font-size: 3em;	
+	font-family: 'Sacramento', cursive;
+	
+	}
+#mainNavbar .confetti-nav {
+	width: 5%;
+}
+
+
+/* IMAGES */
+
+.top-container {  
+  position: relative;
+  padding-top: 100px;  	
+}
+
+h1 {
+	
+  text-align: center;
+  /* color: white; */
+  color: #FF8C00;
+  font-family: 'Marko One', serif;	
+  font-size: 75px;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);	
+}
+
+
+.bottom-cake {
+	width: 20%;	
+	margin: 10px auto 20px;	
+	display: block;
+}
+
+.left-heart {
+	width: 18%;
+	position: absolute;
+    left: 50px;
+    top: 10px;
+	transform: rotate(-20deg);
+}
+
+
+/* #footer {	
+	font-size: 1.5em;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;  
+    text-align: center;
+	padding: 0.75%;
+	height: 60px;	
+	font-weight: bold;
+	} */
+
+
+

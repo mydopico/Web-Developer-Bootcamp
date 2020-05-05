@@ -1,76 +1,74 @@
-<%- include("partials/header") %>
-
-
-<div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Rate the best book:</h1>
-			
- <div class="form-group">
-    <input type="number" id="rating-control" class="form-control" step="0.1" max="5" placeholder="Rate 1 - 5" disabled>
-  </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Books</th>
-                <th>Ratings</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="book1">
-                <td>Fahrenheit 451</td>
-                <td>
-                  <div class="stars-outer">
-                    <div class="stars-inner"></div>
-                  </div>
-                </td>
-              </tr>
-              <tr class="book2">
-                <td>The Lord of the rings</td>
-                <td>
-                  <div class="stars-outer">
-                    <div class="stars-inner"></div>
-                  </div>
-                </td>
-              </tr>
-              <tr class="book3">
-                <td>Sapiens</td>
-                <td>
-                  <div class="stars-outer">
-                    <div class="stars-inner"></div>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-
-          </table>
-         
-
-        </div> <!-- div close col -->
-      </div> <!-- div close row -->
-    </div> <!-- div close container -->
-
-<script>
-	const ratings = {
-      book1 : 2.8,
-      book2 : 3.3,
-      book3 : 1.9,  
-};
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HAPPY BIRTHDAY</title>
+       		<!-- Bootstrap -->		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Font awesome -->            
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+		<!-- Google Fonts --> 
+			<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&family=Sacramento&display=swap" rel="stylesheet">
+		<!-- custom css -->
+            <link rel="stylesheet" href="/stylesheets/poll.css">         
+    </head>
 	
-const starTotal = 5;
- 
-for(const rating in ratings) {  
-  // 2
-  const starPercentage = (ratings[rating] / starTotal) * 100;
-  // 3
-  const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
-  // 4
-  document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded; 
-}
+    <body>
+						<!-- NAVBAR		 -->
+		  <nav id="mainNavbar" class="navbar navbar-default">
+                    <div class="container">
+                        <div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                               <span class="sr-only">Toggle navigation</span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                               <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">Birthday Event </a>
+							<img class="confetti-nav pull-left" src="https://image.flaticon.com/icons/png/512/864/864763.png" alt="confetti-nav">
+                        </div>
+						<div id="navbar" class="collapse navbar-collapse">
+	                       <ul class="nav navbar-nav navbar-right">		                    
+                               <li><a href="/logout">Logout <i class="fas fa-sign-out-alt"></i></a></li>
+	                       </ul>
+                        </div>
+                    </div>
+          </nav>
+   
+		
+          <div class="container">
+           <% if(error && error.length > 0){ %>
+               <div class="alert alert-danger mt-4" role="alert">
+                   <a href="#" class="alert-link"> <%= error %> </a>
+               </div>	
+           <% } %>
+           <% if(success && success.length > 0){ %>
+               <div class="alert alert-success mt-4" role="alert">
+                   <a href="#" class="alert-link"> <%= success %> </a>
+               </div>
+            <% } %>
+          </div>
 
 
+                <div class="top-container">
+		                <img class="left-heart" src="https://image.flaticon.com/icons/svg/448/448040.svg" alt="heart-img"> 	                                  
+	                     <h1>
+							 Happy Birthday LONG!!!
+						 </h1>	
+	                     <img class="bottom-cake" src="https://image.flaticon.com/icons/svg/448/448003.svg" alt="cake-img">		
+	                     	
+	             </div>	  <!-- end bottom-container -->   			 
+		        
+<!-- 
+                <footer id="footer">
+                    <div class="container-fluid text-center small">            
+	         	         <p class="text-muted"> 祝你好运  2020 </p>		  
+	                </div>    
+                </footer>        -->
+    
+     
 
-
-</script>
-
-<%- include("partials/footer") %>
+      </body>
+</html>
