@@ -17,8 +17,12 @@
 			  <div class="thumbnail">
 				  <img src="<%= campground.image %>">  
 				  <div class="caption">
-					  <h4><%= campground.name %></h4>					  
+					  <h4><%= campground.name %></h4>	
+					    <div>
+                             <span class="badge label-primary"><i class="fas fa-thumbs-up"></i> <%= campground.likes.length %></span>
+                         </div>
 			      </div>
+				 
 				   <p><a class="btn btn-primary" href="/campgrounds/<%= campground._id%>">More Info</a></p>
 			  </div>	  
           </div>
